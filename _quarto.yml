@@ -5,8 +5,8 @@ website:
   title: "GISProject"
   navbar:
     left: 
-      - href: intro.qmd
-        text: Introduction
+      - href: overview.qmd
+        text: Overview
       - href: methodology.qmd
         text: Methodology
       - href: analysis.qmd

@@ -2,8 +2,12 @@
 title: "About"
 ---
 
-About this site
+## Meet the Team!
 
-```{r}
-1 + 1
-```
+**Tan Jia En** is a Year 2 undergraduate from the School of Computing and Information Systems with a primary major in Smart-City Management and Technology, planning to take a second major in Public Policy and Public Management from the School of Social Sciences. In his free time, he likes watching different dramas.
+
+**Leo Jia En, Bella** who is in her second year majoring in Information Systems with a dual track in Smart-City Management and Digital Cloud Solutions, is our next team member to be introduced. She likes watching YouTube videos as a leisure activity and sleeping.
+
+**Jules Asner Robins** is also in Year 2 and majoring in Smart-City Management and Technology with an interest in cybersecurity. Outside of academics, you can see her exploring different food and cuisines.
+
+We would also like to thank **Professor Kam** for guiding us in doing this project and overall, completing the SMT201 module.

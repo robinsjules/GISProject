@@ -1,0 +1,46 @@
+---
+title: "Proposal"
+editor: visual
+---
+
+## Motivation
+
+Education, a basic human right, is for everyone. Thus, all Singaporeans -- children, youths and adults should have fair access to educational institutions. Post-secondary education prior to University or any further studies should be a choice which students are free to have on the basis of merit since different people prefer different teaching methods and pedagogy. The mergers of JCs suggests that fewer students have the choice to enter a JC should they wish to. Furthermore, the distance students must travel also determines the cost and time spent on transportation. Travelling longer distances would mean a larger amount of time is allocated to purely transportation and may hinder students from being energised and engaged once they are in school. 
+
+## Objectives
+
+Our project aims to meet the following objectives:
+
+-   Formulate the shortest distance between junior colleges and residential areas 
+
+-   Create choropleth maps of the accessibility distribution of JCs across the Singapore mainland across three identified merge periods
+
+-   Identify recommendations for the government in relation to the equity of access for Singaporeans who may want to go to junior college
+
+## Data
+
+1.  School Directory and Information CSV file from [data.gov.sg](https://data.gov.sg/)
+
+    -   Perform data cleaning by removing all the columns except for school_name and postal_code.
+
+    -   Using Microsoft Excel, add new rows for the 4 schools (school_name and postal_code) which are currently not in operation by referring to this [MOE link](https://www.moe.gov.sg/-/media/files/news/press/2018/named-of-jcs-merging-in-2019-annex-a.pdf). For ease, the schools and their respective postal codes are:
+
+        -   INNOVA JUNIOR COLLEGE, 737902‎
+
+        -   SERANGOON JUNIOR COLLEGE, 534768
+
+        -   TAMPINES JUNIOR COLLEGE, 529564
+
+        -   JURONG JUNIOR COLLEGE, 649809
+
+            Note: These schools' addresses were found through searching on Google.
+
+<!-- -->
+
+2.  Master Plan 2014 Subzone Boundary (No Sea) from [data.gov.sg](https://data.gov.sg/)
+
+3.  Roads data in OpenStreetMap of Singapore, Malaysia, and Brunei from [Geofabrik](https://download.geofabrik.de/)
+
+## Project Schedule
+
+![](images/SMT201%20GANTT%20CHART%20PROJECT%20TIMELINE%20(3).png)

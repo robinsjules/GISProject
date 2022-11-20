@@ -3,36 +3,10 @@ title: "Overview"
 editor: visual
 ---
 
-## Overview
+## Equity of Access to Junior Colleges
 
-In this project we are given two major themes and sub-theme. Detail description of project is available on this page Page.Land cover classification is a commonly application area of digital image analysis.
+Junior College (JC) students are on the path towards university whilst polytechnic students are trained and poised for the workplace. Thus, accessibility to the JC is imperative as it might be the determining factor of education and upskilling of previously disadvantaged families. Considering that there are more mergers and closures of JCs in Singapore, it is important to analyse the equality of access to JC. We specifically looked into JCs since there are not many to begin with and by merging 8 of them, the number of people who can enter JCs decrease by a significant amount and we feel that it would be most interesting to analyse the changes in equity of access in terms of distance and basis of merit. 
 
-## Literature Review
+To formulate the shortest distance between JCs and residential areas, we created a hexagon layer and computed the centroids of hexagons then used QNEAT3 to calculate the distances between the hexagon centroids and JCs and then extracted out destination points with the shortest distance. Afterwards, we created choropleth maps by joining the shortest distance data to the hexagon layer for each merge period we are looking into. From the maps, we concluded that there is a decrease in equity of access to JCs as a whole, especially in the North and North-West Regions. Upon further analysis, we noticed that 16 of the 22 JCs are located at less mature and more expensive estates. This means students from more affordable living estates will have to travel longer distances and spend more on travelling expenses, which implies an inequity of access to JCs.
 
-In this project, the following articles will be reviewed:
-
--   A
-
--   B
-
--   C
-
-## Objectives
-
-The objectives of this project are as follows:
-
--   A
-
--   B
-
--   C
-
-## Tasks
-
-The project tasks are as follows:
-
--   A
-
--   B
-
--   C
+However, one limitation identified is that we cannot identify the exact residential areas of students who attend JCs as JC is not the only option for post-secondary education and one between 17 to 19 years old may opt for other routes like Polytechnic to study a more specialised path these days. Also, an interesting point to note would be that the 8 JCs that merged are JCs with higher entry points, meaning the number of students with higher points that can enter JCs significantly decreased by half, resulting in a decrease in equity of access.

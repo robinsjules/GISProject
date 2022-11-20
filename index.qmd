@@ -1,5 +1,7 @@
 ---
-title: "GISProject"
+title: "G2-Group12"
 ---
 
 Welcome to our GIS Project website!
+
+The theme of the project is Geography of Accessibility with GIS-based Network Analysis, specifically regarding the impact of closures or mergers of Junior Colleges in Singapore on equity of access. Everyone has the right to education and we believe post-secondary education should be equally accessible to all on the basis of merit.

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>G2-Group12 - Methodology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">G2-Group12</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html">Overview</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Project Propsal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html">Poster</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./methodology.html" aria-current="page">Methodology</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html">Report</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About Us</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#creating-a-qgis-project" id="toc-creating-a-qgis-project" class="nav-link" data-scroll-target="#creating-a-qgis-project"><strong>Creating a QGIS Project</strong></a></li>
+  <li><a href="#adding-vector-layers" id="toc-adding-vector-layers" class="nav-link" data-scroll-target="#adding-vector-layers"><strong>Adding Vector Layers</strong></a></li>
+  <li><a href="#saving-as-geopackage" id="toc-saving-as-geopackage" class="nav-link" data-scroll-target="#saving-as-geopackage"><strong>Saving as GeoPackage</strong></a></li>
+  <li><a href="#clipping-roads" id="toc-clipping-roads" class="nav-link" data-scroll-target="#clipping-roads"><strong>Clipping Roads</strong></a></li>
+  <li><a href="#preparing-the-schools-csv-file" id="toc-preparing-the-schools-csv-file" class="nav-link" data-scroll-target="#preparing-the-schools-csv-file"><strong>Preparing the Schools CSV File</strong></a></li>
+  <li><a href="#creating-hexagon-layer" id="toc-creating-hexagon-layer" class="nav-link" data-scroll-target="#creating-hexagon-layer"><strong>Creating Hexagon Layer</strong></a></li>
+  <li><a href="#computing-hexagon-centroid" id="toc-computing-hexagon-centroid" class="nav-link" data-scroll-target="#computing-hexagon-centroid"><strong>Computing Hexagon Centroid</strong></a></li>
+  <li><a href="#installing-qneat3-plugin" id="toc-installing-qneat3-plugin" class="nav-link" data-scroll-target="#installing-qneat3-plugin"><strong>Installing QNEAT3 Plugin</strong></a></li>
+  <li><a href="#before-merge-before-2019-steps" id="toc-before-merge-before-2019-steps" class="nav-link" data-scroll-target="#before-merge-before-2019-steps"><strong>Before Merge (Before 2019) Steps</strong></a></li>
+  <li><a href="#present-merge-2019-until-now-steps" id="toc-present-merge-2019-until-now-steps" class="nav-link" data-scroll-target="#present-merge-2019-until-now-steps"><strong>Present Merge (2019 until Now) Steps</strong></a></li>
+  <li><a href="#future-merge-plan-from-2028-steps" id="toc-future-merge-plan-from-2028-steps" class="nav-link" data-scroll-target="#future-merge-plan-from-2028-steps"><strong>Future Merge (Plan From 2028) Steps</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methodology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="creating-a-qgis-project" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-qgis-project"><strong>Creating a QGIS Project</strong></h3>
+<p>Open QGIS and create a new project. From the top of the screen, go to Project &gt; New. Before we officially start doing the project, let us change the Project CRS to Singapore SVY21 / ESPG: 3414. By default, the globe at the bottom of the screen says ESPG:4326. Click it then you will see a window. Find ESPG:3414 through the Filter/Search option and search 3414. Click Apply then OK to exit.</p>
+<p><br>
+</p>
+</section>
+<section id="adding-vector-layers" class="level3">
+<h3 class="anchored" data-anchor-id="adding-vector-layers"><strong>Adding Vector Layers</strong></h3>
+<p>Firstly, add in the Master Plan Subzones by going to Layer &gt; Add Layer &gt; Add Vector Layer. The Data Source Manager window should pop up. Under Source, click on the [...] icon which will bring you to your computer’s file directory. Locate the Master Plan 2014 Subzone Boundary (No Sea) shape file. Click the Add button once you are ready.</p>
+<p><br>
+</p>
+</section>
+<section id="saving-as-geopackage" class="level3">
+<h3 class="anchored" data-anchor-id="saving-as-geopackage"><strong>Saving as GeoPackage</strong></h3>
+<p>To save the layer in GeoPackage format, click on Export &gt; Save Feature As…. Afterwards, a window pops up, which is where we save the layer into GeoPackage format. For “Format,” choose GeoPackage. The file name should be SG and make sure it is inside your GeoPackage folder. Name the layer as MPSZ2014. Check that the CRS is set to Project CRS: EPSG:3414 - SVY21 / Singapore TM. Click OK once done. Remove the data source layer.</p>
+<p><br>
+</p>
+</section>
+<section id="clipping-roads" class="level3">
+<h3 class="anchored" data-anchor-id="clipping-roads"><strong>Clipping Roads</strong></h3>
+<p>Repeat the Adding Vector Layers step for the roads layer from OpenStreetMap. Activate the MPSZ2014 layer. Go to Vector &gt; Geoprocessing Tools &gt; Clip. Choose the roads layer as the input layer and the overlay layer as MPSZ2014. Click on Run. A temporary layer named ‘Clipped’ will be created.</p>
+<p>Right click on the ‘Clipped’ temporary layer and export all features into the GeoPackage, saving the layer as Roads.</p>
+<p><br>
+</p>
+</section>
+<section id="preparing-the-schools-csv-file" class="level3">
+<h3 class="anchored" data-anchor-id="preparing-the-schools-csv-file"><strong>Preparing the Schools CSV File</strong></h3>
+<p>Following this, let us add in our layer of school information by going to Layer &gt; Add Layer &gt; Add Delimited Text Layer. In the Data Source manager window, click on the [...] icon and find found.csv to be your File Source. Choose CSV (comma delimited values) as the File Format. Tick Point coordinates under Geometry Definition. X field: results.X, Y field: results.Y. Ensure that the Geometry CRS is EPSG:3414 - SVY21 / Singapore TM then click Add once done.</p>
+<p>Save this in GeoPackage format and name the layer as JCs.</p>
+<p><br>
+</p>
+</section>
+<section id="creating-hexagon-layer" class="level3">
+<h3 class="anchored" data-anchor-id="creating-hexagon-layer"><strong>Creating Hexagon Layer</strong></h3>
+<p>From the menu bar, select Vector -&gt; Research Tools -&gt; Create Grids. A window appears. Follow the following modifications:</p>
+<ul>
+<li><p><strong>Grid type</strong>: Hexagon (Polygon)</p></li>
+<li><p><strong>Grid extent</strong> &gt; Calculate from layer: MPSZ2014</p></li>
+<li><p><strong>Horizontal spacing:</strong> 500</p></li>
+<li><p><strong>Vertical spacing:</strong> 500</p></li>
+<li><p><strong>Grid CRS:</strong> EPSG:3414 - SVY21 / Singapore TM</p></li>
+</ul>
+<p>Click the Run button once it is good to go then Close. A temporary Grid layer will display. We must shape this to the Singapore shapefile by clipping it. Go to Vector &gt; Geoprocessing Tools &gt; Clip. Input layer: Grid, Output layer: MPSZ2014.<br>
+</p>
+<p>However, this is the whole of Singapore, but we only need the mainland. Toggle Editing so that we can delete the outer islands. Perform a Select Features by Freehand (highlighted features will be in yellow) and draw around the excess hexagonal grid then Delete Selected. Remember to click Toggle Editing again to save changes.<br>
+</p>
+<p>Save the output in GeoPackage format. Name the layer as Mainland_Hex. Delete the temporary Grid layer.</p>
+</section>
+<section id="computing-hexagon-centroid" class="level3">
+<h3 class="anchored" data-anchor-id="computing-hexagon-centroid"><strong>Computing Hexagon Centroid</strong></h3>
+<p>From the menu bar, select Vector &gt; Geoprocessing Tools &gt; Centroids. A window appears. For the Input layer, select Mainland_Hex. Click Run then Close.</p>
+<p>A temporary Centroids layer will display. Save the output in GeoPackage format. Name the layer as Hex_Centroids. Delete the temporary Centroids layer.</p>
+<p><br>
+</p>
+</section>
+<section id="installing-qneat3-plugin" class="level3">
+<h3 class="anchored" data-anchor-id="installing-qneat3-plugin"><strong>Installing QNEAT3 Plugin</strong></h3>
+<p>From the menu bar, Plugins &gt; Manage and Install plugins. Type in QNEAT3 in the search bar and install it. Close the dialogue box once finished.</p>
+<p><br>
+</p>
+</section>
+<section id="before-merge-before-2019-steps" class="level3">
+<h3 class="anchored" data-anchor-id="before-merge-before-2019-steps"><strong>Before Merge (Before 2019) Steps</strong></h3>
+<p>1. <strong>Select by Expression:</strong> Right click the JCs layer and Open Attribute Table. Click on the Select features using an expression button. Key in the following in the panel:</p>
+<p>“mainlevel_code” = ‘JUNIOR COLLEGE’ or&nbsp; “school_name” in ( ‘DUNMAN HIGH SCHOOL’,&nbsp; ‘HWA CHONG INSTITUTION’ , ‘NATIONAL JUNIOR COLLEGE’ , ‘RAFFLES INSTITUTION’ , ‘ST. JOSEPH’‘S INSTITUTION’,&nbsp; ‘TEMASEK JUNIOR COLLEGE’,&nbsp; ‘ANGLO-CHINESE SCHOOL (INDEPENDENT)’, ‘MILLENNIA INSTITUTE’, ‘RIVER VALLEY HIGH SCHOOL’,&nbsp; ‘SINGAPORE SPORTS SCHOOL’ ,&nbsp; ‘SCHOOL OF THE ARTS, SINGAPORE’,&nbsp; ‘NUS HIGH SCHOOL OF MATHEMATICS AND SCIENCE’ )&nbsp;</p>
+<p>Then save the selected points into GeoPackage format as the Before_Merge points layer.<br>
+</p>
+<p>2. <strong>Creating</strong> <strong>an OD Matrix:</strong> From the menu bar, Processing &gt; Toolbox. Search for OD Matrix and choose OD Matrix Layers as Table (m:n). its dialogue window appears. Follow the following modifications:</p>
+<ul>
+<li><p><strong>Network Layer:</strong> Roads&nbsp;</p></li>
+<li><p><strong>From-Point Layer:</strong> Hex_Centroids</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>To-Point Layer:</strong> Before_Merge</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>Optimization Criterion:</strong> Shortest Path (distance optimization)</p></li>
+<li><p><strong>Entry Cost calculation method:</strong> Ellipsoidal</p></li>
+<li><p><strong>Direction field:</strong> oneway</p></li>
+<li><p><strong>Value for forward direction:</strong> F</p></li>
+<li><p><strong>Value for backward direction:</strong> T</p></li>
+<li><p><strong>Value for both direction:</strong> B</p></li>
+<li><p><strong>Topology tolerance:</strong> 0.5</p></li>
+</ul>
+<p>Click Run then Close. A temporary table called Output OD Matrix is added in the Output OD Matrix. Save this into GeoPackage format and call the layer OD_Before. Remember to delete the temporary table.</p>
+<p>3. <strong>Extracting the Shortest Path:</strong> From the menu bar, Processing &gt; Toolbox. Search for SQL and choose Execute SQL. For Additional input data sources, select on the button at the right end. Tick on the checkbox of OD_Before and click OK.</p>
+<p><br>
+In the SQL panel, type the following:<br>
+</p>
+<p>select origin_id, destination_id, min(total_cost) as shortest distance</p>
+<p>from input1 group by origin_id</p>
+<p><br>
+For Geometry type, select No Geometry then Run. A temporary table called SQL Output will appear. Save it in GeoPackage format and name the layer as Acc_Before.</p>
+<p>4. <strong>Mapping Accessibility:</strong> Duplicate the Mainland_Hex layer by right clicking on it and selecting Duplicate Layer. Rename it as Acc_to_Mainland_Before. Right click on it and go to the Properties. In the options panel, click on Joins. Press the + button to add. A window appears. Use the following modifications:</p>
+<ul>
+<li><p><strong>Join layer:</strong> Acc_Before</p></li>
+<li><p><strong>Join field:</strong> fid</p></li>
+<li><p><strong>Target field:</strong> origin_id</p></li>
+</ul>
+<p>Keep the Cache join layer in memory ticked then click OK once done.</p>
+<p><br>
+</p>
+<p>5. <strong>Creating Choropleth Map:</strong> Right click on the Acc_to_Mainland_Before layer in the Layers Panel. Go to Symbology. For Symbol, select Graduated from the drop-down list. Follow the following modifications:</p>
+<p><br>
+</p>
+<ul>
+<li><p><strong>Value: ACC_Before_Merge_shortest_distance</strong></p></li>
+<li><p><strong>Classes:</strong> 5</p></li>
+<li><p><strong>Mode:</strong> Equal Count (Quantile)</p></li>
+</ul>
+<p><br>
+</p>
+<p>Choose your preferred colours for the Colour ramp. Click on Classify when ready.</p>
+<p>NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.</p>
+<p>To edit the range for the legend, double click on the number for each row and edit accordingly as well. After analysing the ranges for all 3 maps, we decided to standardise with the above range for each class.&nbsp;</p>
+<p><br>
+&nbsp;</p>
+</section>
+<section id="present-merge-2019-until-now-steps" class="level3">
+<h3 class="anchored" data-anchor-id="present-merge-2019-until-now-steps"><strong>Present Merge (2019 until Now) Steps</strong></h3>
+<p>1. <strong>Select by Expression:</strong> Right click the Before_Merge layer and Open Attribute Table. Click on the Select features using an expression button. Key in the following in the panel:<br>
+</p>
+<p>“school_name” in ( ‘INNOVA JUNIOR COLLEGE’ , ‘SERANGOON JUNIOR COLLEGE’ , ‘TAMPINES JUNIOR COLLEGE’ ,&nbsp; ‘JURONG JUNIOR COLLEGE’ )</p>
+<p>Invert this selection (there should be 22 points selected), then save the selected points into GeoPackage format as the Present_Merge points layer.<br>
+</p>
+<p>2. <strong>Creating</strong> <strong>an OD Matrix:</strong> From the menu bar, Processing &gt; Toolbox. Search for OD Matrix and choose OD Matrix Layers as Table (m:n). its dialogue window appears. Follow the following modifications:</p>
+<p><br>
+</p>
+<ul>
+<li><p><strong>Network Layer:</strong> Roads&nbsp;</p></li>
+<li><p><strong>From-Point Layer:</strong> Hex_Centroids</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>To-Point Layer:</strong> Present_Merge</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>Optimization Criterion:</strong> Shortest Path (distance optimization)</p></li>
+<li><p><strong>Entry Cost calculation method:</strong> Ellipsoidal</p></li>
+<li><p><strong>Direction field:</strong> oneway</p></li>
+<li><p><strong>Value for forward direction:</strong> F</p></li>
+<li><p><strong>Value for backward direction:</strong> T</p></li>
+<li><p><strong>Value for both direction:</strong> B</p></li>
+<li><p><strong>Topology tolerance:</strong> 0.5</p></li>
+</ul>
+<p><br>
+Click Run then Close. A temporary table called Output OD Matrix is added in the Output OD Matrix. Save this into GeoPackage format and call the layer OD_Present. Remember to delete the temporary table.<br>
+</p>
+<p>3. <strong>Extracting the Shortest Path:</strong> From the menu bar, Processing &gt; Toolbox. Search for SQL and choose Execute SQL. For Additional input data sources, select on the button at the right end. Tick on the checkbox of OD_Present and click OK.</p>
+<p>In the SQL panel, type the following:</p>
+<p>select origin_id, destination_id, min(total_cost) as shortest distance</p>
+<p>from input1 group by origin_id<br>
+</p>
+<p>For Geometry type, select No Geometry then Run. A temporary table called SQL Output will appear. Save it in GeoPackage format and name the layer as Acc_Present.</p>
+<p>4. <strong>Mapping Accessibility:</strong> Duplicate the Mainland_Hex layer by right clicking on it and selecting Duplicate Layer. Rename it as Acc_to_Mainland_Present. Right click on it and go to the Properties. In the options panel, click on Joins. Press the + button to add. A window appears. Use the following modifications:</p>
+<p><br>
+</p>
+<ul>
+<li><p><strong>Join layer:</strong> Acc_Present</p></li>
+<li><p><strong>Join field:</strong> fid</p></li>
+<li><p><strong>Target field:</strong> origin_id</p></li>
+</ul>
+<p><br>
+Keep the Cache join layer in memory ticked then click OK once done.<br>
+</p>
+<p>5. <strong>Creating Choropleth Map:</strong> Right click on the Acc_to_Mainland_Present layer in the Layers Panel. Go to Symbology. For Symbol, select Graduated from the drop-down list. Follow the following modifications:<br>
+</p>
+<ul>
+<li><p><strong>Value: ACC_Present_Merge_shortest_distance</strong></p></li>
+<li><p><strong>Classes:</strong> 5</p></li>
+<li><p><strong>Mode:</strong> Equal Count (Quantile)</p></li>
+</ul>
+<p>Choose your preferred colours for the Colour ramp. Click on Classify when ready.</p>
+<p>NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.</p>
+<p>To edit the range for the legend, double click on the number for each row and edit accordingly as well. After analysing the ranges for all 3 maps, we decided to standardise with the above range for each class.&nbsp;</p>
+<p><br>
+</p>
+</section>
+<section id="future-merge-plan-from-2028-steps" class="level3">
+<h3 class="anchored" data-anchor-id="future-merge-plan-from-2028-steps"><strong>Future Merge (Plan From 2028) Steps</strong></h3>
+<p>1. <strong>Select by Expression:</strong> Right click the Before_Merge layer and Open Attribute Table. Click on the Select features using an expression button. Key in the following in the panel:</p>
+<p>“school_name” in ( ‘YISHUN INNOVA JUNIOR COLLEGE’ , ‘SERANGOON JUNIOR COLLEGE’ , ‘TAMPINES JUNIOR COLLEGE’ ,&nbsp; ‘JURONG PIONEER JUNIOR COLLEGE’ )</p>
+<p>NOTE: As reference, we used this <a href="https://www.tnp.sg/news/singapore/construction-upgrading-some-schools-be-delayed">Straits Times article</a> to identify the plan for school relocation in 2028.</p>
+<p>Invert this selection (there should be 22 points selected), then save the selected points into GeoPackage format as the Future_Merge points layer.<br>
+</p>
+<p>2. <strong>Creating</strong> <strong>an OD Matrix:</strong> From the menu bar, Processing &gt; Toolbox. Search for OD Matrix and choose OD Matrix Layers as Table (m:n). its dialogue window appears. Follow the following modifications:</p>
+<ul>
+<li><p><strong>Network Layer:</strong> Roads&nbsp;</p></li>
+<li><p><strong>From-Point Layer:</strong> Hex_Centroids</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>To-Point Layer:</strong> Future_Merge</p></li>
+<li><p><strong>Unique Point ID Field:</strong> fid</p></li>
+<li><p><strong>Optimization Criterion:</strong> Shortest Path (distance optimization)</p></li>
+<li><p><strong>Entry Cost calculation method:</strong> Ellipsoidal</p></li>
+<li><p><strong>Direction field:</strong> oneway</p></li>
+<li><p><strong>Value for forward direction:</strong> F</p></li>
+<li><p><strong>Value for backward direction:</strong> T</p></li>
+<li><p><strong>Value for both direction:</strong> B</p></li>
+<li><p><strong>Topology tolerance:</strong> 0.5</p></li>
+</ul>
+<p><br>
+Click Run then Close. A temporary table called Output OD Matrix is added in the Output OD Matrix. Save this into GeoPackage format and call the layer OD_Future. Remember to delete the temporary table.</p>
+<p>3. <strong>Extracting the Shortest Path:</strong> From the menu bar, Processing &gt; Toolbox. Search for SQL and choose Execute SQL. For Additional input data sources, select on the button at the right end. Tick on the checkbox of OD_Future and click OK.</p>
+<p>In the SQL panel, type the following:</p>
+<p>select origin_id, destination_id, min(total_cost) as shortest distance</p>
+<p>from input1 group by origin_id</p>
+<p><br>
+For Geometry type, select No Geometry then Run. A temporary table called SQL Output will appear. Save it in GeoPackage format and name the layer as Acc_Future.<br>
+</p>
+<p>4. <strong>Mapping Accessibility:</strong> Duplicate the Mainland_Hex layer by right clicking on it and selecting Duplicate Layer. Rename it as Acc_to_Mainland_Future. Right click on it and go to the Properties. In the options panel, click on Joins. Press the + button to add. A window appears. Use the following modifications:<br>
+</p>
+<ul>
+<li><p><strong>Join layer:</strong> Acc_Future</p></li>
+<li><p><strong>Join field:</strong> fid</p></li>
+<li><p><strong>Target field:</strong> origin_id</p></li>
+</ul>
+<p>Keep the Cache join layer in memory ticked then click OK once done.<br>
+<br>
+</p>
+<p>5. <strong>Creating Choropleth Map:</strong> Right click on the Acc_to_Mainland_Future layer in the Layers Panel. Go to Symbology. For Symbol, select Graduated from the drop-down list. Follow the following modifications:</p>
+<ul>
+<li><p><strong>Value: ACC_Future_Merge_shortest_distance</strong></p></li>
+<li><p><strong>Classes:</strong> 5</p></li>
+<li><p><strong>Mode:</strong> Equal Count (Quantile)</p></li>
+</ul>
+<p><br>
+Choose your preferred colours for the Colour ramp. Click on Classify when ready.<br>
+</p>
+<p>NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.</p>
+<p>To edit the range for the legend, double click on the number for each row and edit accordingly as well. After analysing the ranges for all 3 maps, we decided to standardise with the above range for each class.</p>
+<p><br>
+</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,92 @@
+---
+title: "Report"
+editor: visual
+---
+
+## **Results and Discussion**
+
+### **Results**
+
+**Map 1: Before Merge (Before 2019)**
+
+![](images/before%20merge%20newest.png)
+
+**Map 2: Present Merge (2019 until Present, 2022)**
+
+![](images/present%20merge%20newest.png)
+
+**Map 3: Future Merge (Plan from 2028)** 
+
+![](images/future%20merge%20newest.png)
+
+\
+
+**Comparison 1: Before VS Present**
+
+|                                                |                                                 |
+|------------------------------------|------------------------------------|
+| ![](images/before%20merge%20COMPARISON-01.png) | ![](images/PRESENT%20merge%20COMPARISON-01.png) |
+
+Compared to before the merge, our present time has a lower saturation in areas where Tampines JC and Serangoon JC were once situated. Thus, students who live around these areas do not have a JC to attend within proximity of approximately 4 kilometres and need to travel further. Additional travelling expenses would be incurred, and might result in disadvantaged students putting off attending JC since financial assistance does not cover transport fees sufficiently (\$180 per annum).
+
+\
+
+**Comparison 2: Present VS Future**
+
+|                                               |                                             |
+|-------------------------------------|-----------------------------------|
+| ![](images/present%20merge%20comparison2.png) | ![](images/future%20merge%20comparison.png) |
+
+Overall, we still see darker areas in the Central Region but the original area where Jurong Pioneer JC used to be is very light coloured, indicating that the people who live in this West Region have higher inequity to access JCs. Additionally, there are only two in the North Region, one of which specialises in sports and it may not be favourable for everyone.
+
+\
+
+### **Discussion**
+
+Singapore is facing a declining population, with less child births. Governmental and societal efforts are also changing, with the normalisation and encouragement of the polytechnic route as tertiary education complementing the pre-tertiary route. In the case of Junior Colleges, there have been movers and mergers that will take place from 2019.
+
+\
+
+This poses a challenge when it comes to accessibility to schools. In Singapore, there is a likelihood that people would prefer to go to schools which have a lower cut off point and are interpreted as a better school. However, these schools are not available within suburban areas, and are more centrally located. This might pose certain challenges for prospective students.
+
+\
+
+Junior Colleges would be a good indicator of equity of access due to their goal in education. Many JC graduates do go on to attend university, which is a step in the direction of social mobility and uplifting of households, as university graduates do command a higher starting pay compared to diploma holders. In Singapore, primary schools are the beginning of a child's education, and attending the school is also in part, based on their proximity to the school. Due to the level of education in primary schools they serve the purpose of elementary education and streaming of the students into streams, so that they are able to learn at a pace suitable to their educational capabilities. This can also be expanded to secondary schools in Singapore, which lays the foundation and gives the students the chance to explore subjects they are interested in. For these two levels of education, there are many schools and are more generalised.
+
+\
+
+However, when it comes to tertiary education or pre-tertiary education, it becomes a conundrum where Junior College students are on the path towards university whilst polytechnic students are trained and poised for the workplace. In the case of educational equity, JCs become prime in the determination of future for the students. In JCs, there are cut off points, which after O-levels in secondary schools, meeting these targets will be the determining factor if they are capable of joining the school. The eventual results of A-level after attending the JC is significant. This has a direct and observed implication of the eventual qualification and the type of Universities the students have. Thus, accessibility to the Junior College is imperative as it might be the determining factor of education and upskilling of previously disadvantaged families.
+
+\
+
+Singapore, being a meritocratic society, does provide opportunities for disadvantaged families to upskill and elevate. However, the opportunities are not sufficient as there are still intricacies which cannot be solved with just money and opportunities as there are also challenges socially, within the family which more intangible reasons might impede opportunities. Thus, JCs are important to consider as it is the barrier of entry into universities.
+
+\
+
+**Time taken:**
+
+According to to HealthHub, a Ministry of Health outreach website, teens should get at least 8 to 10 hours of sleep in a day. If schools, especially junior colleges, are located far away from their place of residence, the commuting time would affect the sleep time of the students. An example of this would be a student residing in Block 295 HDB Punggol, but having to commute to Dover to attend school at Anglo-Chinese School (Independent), the time incurred by taking public transportation would be at least 1 hour and 18 minutes and this does not take into account waiting time for trains and traffic lights. In total, transportation time can potentially be up to 3 hours in total. School time is from 7:30am to 4pm thus after factoring the time in schools, 8.5 hours and 3 hours of transportation time. Assuming they sleep for 10 hours and dinner time is 1 hour, the student would only have 1.5 hours of free time a day, and homework is also required to be done. This is mentally and physically taxing for students and is not ideal.
+
+\
+
+**Cost Incurred:**
+
+Considering the rising prices of public transportation fees in Singapore, it is very discouraging that even with full MOE financial assistance, students can potentially only receive \$17 transport credit per month, or up to \$204 per year. However, following the previous case of Punggol to ACS (Independent), by reference to the transit link concession fare page the student would already incur almost \$2 worth of transportation fees a day due to the combination of bus and train fees. This is in line with the cost of a hybrid concession pass(bus and train), which is \$54 a month. Even assuming that the student did not opt for the hybrid pass, the minimum of \$26.50 a month for train only is still almost \$10 higher than what might be provided monthly for transportation.
+
+\
+
+In a 2021 article, median household income that seeked help from a charity was approximately \$500. Considering that amount of money, it might in turn discourage capable students from attending low cut off point JCs in Singapore due to their location being located in the prime, most expensive districts of Singapore. Instead, intellectually capable students who do are not able to afford school despite financial assistance by MOE might instead opt to enter the workforce. This prevents social mobility as needy families might lack the opportunity to upskill themselves and uplift themself from lower paid jobs.
+
+\
+
+Coupled with the fact that it is impossible to only rely on governmental and school only subsidies for schools only, there ends up the issue that prospective JC students might need to work part time to supplement their family income. It is also a barrier to the education where assuming that they do manage to qualify for JC, one that is closer in proximity to their home would enable them to work part time.
+
+\
+
+**Recommendation:**
+
+Considering that lower cut-offs point JCs do produce better scoring A-level students, it can be understood that these cut off points do have an impact on the educational level and standard provided. This goes back to the main issue of social mobility and accessibility to disadvantaged students, where distance creates obstacles from attending school despite them being fully qualified.
+
+There are 2 JCs carrying the same school name, with decently low cut off points, namely ACJC and ACS (Independent) located within walking distance to each other. Since their mode of education (IB vs A-level) is different, it is unlikely that they will be merged. However, both venues have been in their current premises for many years and are due for renovations and upgrades. It would be ideal if ACJC and other low cut off points JC can potentially be moved to more mature locations so that they are spread out and not clustered in the Central Region.
+
+\

@@ -2,25 +2,28 @@ project:
   type: website
 
 website:
-  title: "GISProject"
+  title: "G2-Group12"
   navbar:
     left: 
       - href: overview.qmd
         text: Overview
+      - href: proposal.qmd
+        text: Project Propsal
+      - href: poster.qmd
+        text: Poster
       - href: methodology.qmd
         text: Methodology
-      - href: analysis.qmd
-        text: Analysis
-      - href: findings.qmd
-        text: Results and Discussion
+      - href: report.qmd
+        text: Report
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About Us
 
 format:
   html:
-    theme: cosmo
+    theme: superhero
     css: styles.css
     toc: true
 

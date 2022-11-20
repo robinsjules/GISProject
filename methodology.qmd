@@ -3,7 +3,7 @@ title: "Methodology"
 editor: visual
 ---
 
-## Methodology
+## Steps for Analysis
 
 ### **Creating a QGIS Project**
 
@@ -26,6 +26,8 @@ To save the layer in GeoPackage format, click on Export \> Save Feature As.... A
 ### **Clipping Roads**
 
 Repeat the Adding Vector Layers step for the roads layer from OpenStreetMap. Activate the MPSZ2014 layer. Go to Vector \> Geoprocessing Tools \> Clip. Choose the roads layer as the input layer and the overlay layer as MPSZ2014. Click on Run. A temporary layer named 'Clipped' will be created.
+
+![](images/Road_clipping.jpg)
 
 Right click on the 'Clipped' temporary layer and export all features into the GeoPackage, saving the layer as Roads.
 
@@ -53,9 +55,13 @@ From the menu bar, select Vector -\> Research Tools -\> Create Grids. A window a
 
 -   **Grid CRS:** EPSG:3414 - SVY21 / Singapore TM
 
+![](images/Creating_hex.jpg)
+
 Click the Run button once it is good to go then Close. A temporary Grid layer will display. We must shape this to the Singapore shapefile by clipping it. Go to Vector \> Geoprocessing Tools \> Clip. Input layer: Grid, Output layer: MPSZ2014.\
 
-However, this is the whole of Singapore, but we only need the mainland. Toggle Editing so that we can delete the outer islands. Perform a Select Features by Freehand (highlighted features will be in yellow) and draw around the excess hexagonal grid then Delete Selected. Remember to click Toggle Editing again to save changes.\
+However, this is the whole of Singapore, but we only need the mainland. Toggle Editing so that we can delete the outer islands. Perform a Select Features by Freehand (highlighted features will be in yellow) and draw around the excess hexagonal grid then Delete Selected. Remember to click Toggle Editing again to save changes.
+
+![](images/Clipping_mpsz.jpg)
 
 Save the output in GeoPackage format. Name the layer as Mainland_Hex. Delete the temporary Grid layer.
 
@@ -107,6 +113,8 @@ Then save the selected points into GeoPackage format as the Before_Merge points 
 
 -   **Topology tolerance:** 0.5
 
+![](images/OD_Matrix_details.jpg)
+
 Click Run then Close. A temporary table called Output OD Matrix is added in the Output OD Matrix. Save this into GeoPackage format and call the layer OD_Before. Remember to delete the temporary table.
 
 3\. **Extracting the Shortest Path:** From the menu bar, Processing \> Toolbox. Search for SQL and choose Execute SQL. For Additional input data sources, select on the button at the right end. Tick on the checkbox of OD_Before and click OK.
@@ -129,6 +137,8 @@ For Geometry type, select No Geometry then Run. A temporary table called SQL Out
 
 -   **Target field:** origin_id
 
+![](images/join_details.jpg)
+
 Keep the Cache join layer in memory ticked then click OK once done.
 
 \
@@ -144,6 +154,8 @@ Keep the Cache join layer in memory ticked then click OK once done.
 -   **Mode:** Equal Count (Quantile)
 
 \
+
+![](images/before%20.png)
 
 Choose your preferred colours for the Colour ramp. Click on Classify when ready.
 
@@ -224,6 +236,8 @@ Keep the Cache join layer in memory ticked then click OK once done.\
 
 -   **Mode:** Equal Count (Quantile)
 
+![](images/present.png)
+
 Choose your preferred colours for the Colour ramp. Click on Classify when ready.
 
 NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.
@@ -300,6 +314,8 @@ Keep the Cache join layer in memory ticked then click OK once done.\
 -   **Classes:** 5
 
 -   **Mode:** Equal Count (Quantile)
+
+![](images/future.png)
 
 \
 Choose your preferred colours for the Colour ramp. Click on Classify when ready.\

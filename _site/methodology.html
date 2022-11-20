@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
+  <li><a href="#steps-for-analysis" id="toc-steps-for-analysis" class="nav-link active" data-scroll-target="#steps-for-analysis">Steps for Analysis</a>
   <ul class="collapse">
   <li><a href="#creating-a-qgis-project" id="toc-creating-a-qgis-project" class="nav-link" data-scroll-target="#creating-a-qgis-project"><strong>Creating a QGIS Project</strong></a></li>
   <li><a href="#adding-vector-layers" id="toc-adding-vector-layers" class="nav-link" data-scroll-target="#adding-vector-layers"><strong>Adding Vector Layers</strong></a></li>
@@ -153,8 +153,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="steps-for-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="steps-for-analysis">Steps for Analysis</h2>
 <section id="creating-a-qgis-project" class="level3">
 <h3 class="anchored" data-anchor-id="creating-a-qgis-project"><strong>Creating a QGIS Project</strong></h3>
 <p>Open QGIS and create a new project. From the top of the screen, go to Project &gt; New. Before we officially start doing the project, let us change the Project CRS to Singapore SVY21 / ESPG: 3414. By default, the globe at the bottom of the screen says ESPG:4326. Click it then you will see a window. Find ESPG:3414 through the Filter/Search option and search 3414. Click Apply then OK to exit.</p>
@@ -176,6 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="clipping-roads" class="level3">
 <h3 class="anchored" data-anchor-id="clipping-roads"><strong>Clipping Roads</strong></h3>
 <p>Repeat the Adding Vector Layers step for the roads layer from OpenStreetMap. Activate the MPSZ2014 layer. Go to Vector &gt; Geoprocessing Tools &gt; Clip. Choose the roads layer as the input layer and the overlay layer as MPSZ2014. Click on Run. A temporary layer named ‘Clipped’ will be created.</p>
+<p><img src="images/Road_clipping.jpg" class="img-fluid"></p>
 <p>Right click on the ‘Clipped’ temporary layer and export all features into the GeoPackage, saving the layer as Roads.</p>
 <p><br>
 </p>
@@ -197,10 +198,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Vertical spacing:</strong> 500</p></li>
 <li><p><strong>Grid CRS:</strong> EPSG:3414 - SVY21 / Singapore TM</p></li>
 </ul>
+<p><img src="images/Creating_hex.jpg" class="img-fluid"></p>
 <p>Click the Run button once it is good to go then Close. A temporary Grid layer will display. We must shape this to the Singapore shapefile by clipping it. Go to Vector &gt; Geoprocessing Tools &gt; Clip. Input layer: Grid, Output layer: MPSZ2014.<br>
 </p>
-<p>However, this is the whole of Singapore, but we only need the mainland. Toggle Editing so that we can delete the outer islands. Perform a Select Features by Freehand (highlighted features will be in yellow) and draw around the excess hexagonal grid then Delete Selected. Remember to click Toggle Editing again to save changes.<br>
-</p>
+<p>However, this is the whole of Singapore, but we only need the mainland. Toggle Editing so that we can delete the outer islands. Perform a Select Features by Freehand (highlighted features will be in yellow) and draw around the excess hexagonal grid then Delete Selected. Remember to click Toggle Editing again to save changes.</p>
+<p><img src="images/Clipping_mpsz.jpg" class="img-fluid"></p>
 <p>Save the output in GeoPackage format. Name the layer as Mainland_Hex. Delete the temporary Grid layer.</p>
 </section>
 <section id="computing-hexagon-centroid" class="level3">
@@ -237,6 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Value for both direction:</strong> B</p></li>
 <li><p><strong>Topology tolerance:</strong> 0.5</p></li>
 </ul>
+<p><img src="images/OD_Matrix_details.jpg" class="img-fluid"></p>
 <p>Click Run then Close. A temporary table called Output OD Matrix is added in the Output OD Matrix. Save this into GeoPackage format and call the layer OD_Before. Remember to delete the temporary table.</p>
 <p>3. <strong>Extracting the Shortest Path:</strong> From the menu bar, Processing &gt; Toolbox. Search for SQL and choose Execute SQL. For Additional input data sources, select on the button at the right end. Tick on the checkbox of OD_Before and click OK.</p>
 <p><br>
@@ -252,6 +255,7 @@ For Geometry type, select No Geometry then Run. A temporary table called SQL Out
 <li><p><strong>Join field:</strong> fid</p></li>
 <li><p><strong>Target field:</strong> origin_id</p></li>
 </ul>
+<p><img src="images/join_details.jpg" class="img-fluid"></p>
 <p>Keep the Cache join layer in memory ticked then click OK once done.</p>
 <p><br>
 </p>
@@ -265,6 +269,7 @@ For Geometry type, select No Geometry then Run. A temporary table called SQL Out
 </ul>
 <p><br>
 </p>
+<p><img src="images/before%20.png" class="img-fluid"></p>
 <p>Choose your preferred colours for the Colour ramp. Click on Classify when ready.</p>
 <p>NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.</p>
 <p>To edit the range for the legend, double click on the number for each row and edit accordingly as well. After analysing the ranges for all 3 maps, we decided to standardise with the above range for each class.&nbsp;</p>
@@ -322,6 +327,7 @@ Keep the Cache join layer in memory ticked then click OK once done.<br>
 <li><p><strong>Classes:</strong> 5</p></li>
 <li><p><strong>Mode:</strong> Equal Count (Quantile)</p></li>
 </ul>
+<p><img src="images/present.png" class="img-fluid"></p>
 <p>Choose your preferred colours for the Colour ramp. Click on Classify when ready.</p>
 <p>NOTE: To ensure fair comparison among all layers, we will change the value range for each class for all maps. You can do so by double clicking on the values for each row. A pop-up window will appear as shown below and you can edit the range accordingly.</p>
 <p>To edit the range for the legend, double click on the number for each row and edit accordingly as well. After analysing the ranges for all 3 maps, we decided to standardise with the above range for each class.&nbsp;</p>
@@ -375,6 +381,7 @@ For Geometry type, select No Geometry then Run. A temporary table called SQL Out
 <li><p><strong>Classes:</strong> 5</p></li>
 <li><p><strong>Mode:</strong> Equal Count (Quantile)</p></li>
 </ul>
+<p><img src="images/future.png" class="img-fluid"></p>
 <p><br>
 Choose your preferred colours for the Colour ramp. Click on Classify when ready.<br>
 </p>

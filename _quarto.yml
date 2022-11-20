@@ -15,6 +15,8 @@ website:
         text: Methodology
       - href: report.qmd
         text: Report
+      - href: literature.qmd
+        text: Literature Review
     right:
       - href: index.qmd
         text: Home

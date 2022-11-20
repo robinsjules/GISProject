@@ -24,7 +24,7 @@ editor: visual
 **Comparison 1: Before VS Present**
 
 |                                                |                                                 |
-|------------------------------------|------------------------------------|
+|------------------------------------------------|-------------------------------------------------|
 | ![](images/before%20merge%20COMPARISON-01.png) | ![](images/PRESENT%20merge%20COMPARISON-01.png) |
 
 Compared to before the merge, our present time has a lower saturation in areas where Tampines JC and Serangoon JC were once situated. Thus, students who live around these areas do not have a JC to attend within proximity of approximately 4 kilometres and need to travel further. Additional travelling expenses would be incurred, and might result in disadvantaged students putting off attending JC since financial assistance does not cover transport fees sufficiently (\$180 per annum).
@@ -34,7 +34,7 @@ Compared to before the merge, our present time has a lower saturation in areas w
 **Comparison 2: Present VS Future**
 
 |                                               |                                             |
-|-------------------------------------|-----------------------------------|
+|-----------------------------------------------|---------------------------------------------|
 | ![](images/present%20merge%20comparison2.png) | ![](images/future%20merge%20comparison.png) |
 
 Overall, we still see darker areas in the Central Region but the original area where Jurong Pioneer JC used to be is very light coloured, indicating that the people who live in this West Region have higher inequity to access JCs. Additionally, there are only two in the North Region, one of which specialises in sports and it may not be favourable for everyone.
